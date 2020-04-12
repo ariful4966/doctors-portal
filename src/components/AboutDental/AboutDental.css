@@ -1,0 +1,22 @@
+.aboutDental {
+    text-align: left;
+}
+a, a:hover{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.doctorBg {
+    background: linear-gradient(45deg, #18D3AF, #0FCFEA);
+}
+.btnDoctor {
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.linkColor {
+    color: #fff;
+}

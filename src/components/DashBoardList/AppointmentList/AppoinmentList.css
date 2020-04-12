@@ -1,0 +1,21 @@
+.appointListHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+thead tr, tbody tr {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+}
+
+thead tr th , tbody tr td {
+    /* display: flex; */
+    text-align: left;
+    width: 30%;
+}

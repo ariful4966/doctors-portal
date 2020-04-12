@@ -1,24 +1,56 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 import './App.css';
+import NotFound from "./components/NotFound/NotFound";
+import Header from "./components/Header/Header";
+import Appointment from "./components/Appointment/Appointment";
+import Dashboard from "./components/Dashboard/Dashboard";
+import AppointDashboard from "./components/Dashboard/AppointDashboard";
+import PatientDashboard from "./components/Dashboard/PatientDashboard";
+import SettingDashboard from "./components/Dashboard/SettingDashboard";
+import PrescriptionDashboard from "./components/Dashboard/PrescriptionDashboarde";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Router>
+     
+
+        <Switch>
+          <Route path="/header">
+            <Header></Header>
+          </Route>
+          <Route path="/appointment">
+            <Appointment></Appointment>
+          </Route>
+          <Route path="/doctor/dashboard">
+            <Dashboard></Dashboard>
+          </Route>
+          <Route path="/dashboard/appointment">
+            <AppointDashboard></AppointDashboard>
+          </Route>
+          <Route path="/dashboard/patient">
+            <PatientDashboard></PatientDashboard>
+          </Route>
+          <Route path="/dashboard/setting">
+            <SettingDashboard></SettingDashboard>
+          </Route>
+          <Route path="/dashboard/prescription">
+            <PrescriptionDashboard></PrescriptionDashboard>
+          </Route>
+          <Route exact path="/">
+            <Header></Header>
+          </Route>
+          <Route path="*">
+            <NotFound></NotFound>
+          </Route>
+        </Switch>
+      
+    </Router>
     </div>
   );
 }

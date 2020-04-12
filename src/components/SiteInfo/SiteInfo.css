@@ -1,0 +1,22 @@
+.singleInfo {
+    width: 30%;
+    text-align: left;
+    color:#fff;
+    border-radius: 5px;
+}
+.singleInfo>div:nth-child(1) {
+    width: 30%;
+    text-align: center;
+}
+
+.singleInfo>div:nth-child(2) {
+    width: 70%;
+}
+.singleInfo:nth-child(odd) {
+    background: #1CC7C1;
+}
+
+.singleInfo:nth-child(even) {
+    background: #3A4256;
+}
+.infoIcon svg {font-size: 86px;}

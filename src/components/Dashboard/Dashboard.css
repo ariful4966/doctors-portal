@@ -1,0 +1,56 @@
+.flexBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+
+.dashboardHeading:nth-child(1) {background: #F1536E;}
+
+.dashboardHeading {
+    width: 23.5%;
+    border-radius: 5px;
+}
+
+.dashboardHeading:nth-child(2) {
+    background: #3DA5F4;
+}
+
+.dashboardHeading:nth-child(3) {
+    background: #45D5A9;
+}
+
+.dashboardHeading:nth-child(4) {
+    background: #FDA006;
+}
+
+.singleDHeading {
+    display: flex;
+    align-items: center;
+}
+
+.appointNumber {
+    width: 30%;
+}
+
+.appointAbout {
+    width: 70%;
+    text-align: left;
+}
+.backHome, .backHome:hover {
+    cursor: pointer;
+    color: #00f;
+    font-size: 20px;
+    margin: 10px 20px;
+}
+a.dashBoardMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+.appointListHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
