@@ -3,11 +3,11 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import DashboardIcon from '@material-ui/icons/Dashboard';
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import PeopleIcon from '@material-ui/icons/People';
-import BarChartIcon from '@material-ui/icons/BarChart';
-import LayersIcon from '@material-ui/icons/Layers';
 import { Link } from 'react-router-dom';
+import DateRangeIcon from '@material-ui/icons/DateRange';
+import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
+import NoteAddIcon from '@material-ui/icons/NoteAdd';
+import SettingsIcon from '@material-ui/icons/Settings';
 
 export const mainListItems = (
     <div>
@@ -22,7 +22,7 @@ export const mainListItems = (
         <ListItem button>
             <Link to="/dashboard/appointment" className="dashBoardMenu">
                 <ListItemIcon>
-                    <ShoppingCartIcon />
+                    <DateRangeIcon />
                 </ListItemIcon>
                 <ListItemText primary="Appointments" />
             </Link>
@@ -30,7 +30,7 @@ export const mainListItems = (
         <ListItem button>
             <Link to="/dashboard/patient" className="dashBoardMenu">
                 <ListItemIcon>
-                    <PeopleIcon />
+                    <SupervisorAccountIcon />
                 </ListItemIcon>
                 <ListItemText primary="Patients" />
             </Link>
@@ -38,7 +38,7 @@ export const mainListItems = (
         <ListItem button>
             <Link to="/dashboard/prescription" className="dashBoardMenu">
                 <ListItemIcon>
-                    <LayersIcon />
+                    <NoteAddIcon />
                 </ListItemIcon>
                 <ListItemText primary="Prescriptions" />
             </Link>
@@ -47,7 +47,7 @@ export const mainListItems = (
         <ListItem button>
             <Link to="/dashboard/setting" className="dashBoardMenu">
                 <ListItemIcon>
-                    <BarChartIcon />
+                    <SettingsIcon />
                 </ListItemIcon>
                 <ListItemText primary="Settings" />
             </Link>

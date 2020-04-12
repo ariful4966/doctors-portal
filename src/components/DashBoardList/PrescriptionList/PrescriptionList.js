@@ -5,7 +5,7 @@ import PrescriptionListBody from './PrescriptionListBody';
 const PrescriptionList = () => {
     const [patient, setPatient] = useState([])
     useEffect(()=>{
-        fetch('http://localhost:4200/patients')
+        fetch('https://boiling-sierra-01617.herokuapp.com/patients')
         .then(res => res.json())
         .then(data =>{
             setPatient(data);
